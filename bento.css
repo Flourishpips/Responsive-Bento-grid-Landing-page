@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dfdada;
+}
+.bento-grid {
+    display: grid;
+    min-width: 500px;
+    gap: 20px;
+    /* padding: 20px; */
+    margin: 0px auto;
+    font-family: sans-serif;
+    width: 70%;
+}
+.bento-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(130, 34, 219);
+    color: white;
+}
+.review_stats {
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.social {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 40px;
+}
+i {
+    color: #e7cd3b;
+}
+.acct_management {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+}
+.platforms {
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+.acct_management_text {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+.post_schedule {
+    background-color: #e7a23b;
+    border-radius: 10px;
+    color: black;
+    /* justify-content: center; */
+}
+.schedule_img {
+    margin-left: 40px;
+    margin-bottom: -5px;
+}
+.sched_text {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px;
+}
+.social_schedule {
+    background-color: rgb(163, 178, 243);
+    border-radius: 10px;
+    justify-content: center;
+}
+.media_sched {
+    width: 500px;
+    margin-left: 40px;
+}
+.optimize {
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.growth {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    background-color: rgb(130, 34, 219);
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.growth_image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.growth_text {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+}
+.percent {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 40px 0px 0px 40px;
+}
+.audience {
+    background-color: white;
+    border-radius: 10px;
+
+}
+.audience_text {
+    margin: 10px 10px 10px 40px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.audience_img {
+    margin: 0px 0px 20px 40px;
+}
+.content {
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+.content_text {
+    font-size: 40px;
+    margin: 40px 60px 20px 40px;
+    font-weight: bold;
+}
+.blue {
+    color: rgb(97, 13, 177);
+}
+.ai_content {
+    background-color: #fdbd5e;
+    border-radius: 10px;
+
+}
+@media (width > 1200px) {
+    .bento-grid{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        grid-template-rows: 30% 25% 30%;
+    }
+    .content {
+        grid-column: 1;
+        grid-row: 1;
+        text-wrap: wrap;
+        font-size: 60px;
+    }
+    .bento-item {
+        grid-column: span 2;
+    }
+    .social_schedule {
+        grid-column: 4;
+        grid-row-start: 1;
+        grid-row: 1 / span 2;
+        /* justify-items: center; */
+        text-align: start;
+    }
+    .ai_content{
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+    .growth {
+        grid-column: 3 / span 2;
+        grid-row: 3;
+        text-align: start ;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        font-weight: bolder;
+        flex-wrap: nowrap;
+    }
+    .growth_image {
+        /* width: 100px; */
+        margin: 40px;
+    }
+    .growth_text{
+        margin: 20px;
+    }
+    .post_schedule {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+}
