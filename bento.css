@@ -13,7 +13,7 @@ body {
     /* padding: 20px; */
     margin: 0px auto;
     font-family: sans-serif;
-    width: 90%;
+    width: 80%;
 }
 .bento-item {
     background-color: #f0f0f0;
@@ -184,6 +184,7 @@ i {
         margin: 20px;
     }
     .post_schedule {
+        width: 500px;
         grid-column: 3;
         grid-row: 2;
         overflow: hidden;
